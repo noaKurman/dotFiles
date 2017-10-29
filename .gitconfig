@@ -1,0 +1,28 @@
+[user]
+	name = Noa Kurman
+	email = noa@bigpanda.io
+[core]
+    editor = vim
+[alias]
+    merge = merge --ff-only
+    co = checkout
+    br = branch
+    ci = commit
+    st = status
+    brx = !sh ~/git-branch-switch.sh [diff]
+    renames = true
+    lo = log --pretty=oneline
+    rp = rev-parse
+    df = difftool -t meld -y HEAD~
+    rn = !echo ""- ""
+    up = pull --ff-only upstream master
+    bun = !bundle install && bundle update
+[color]
+    ui = auto
+[help]
+    autocorrect = 1
+[push]
+    default = simple
+[merge]
+    tool = opendiff
+	ff = true
